@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+    font-family:  'Raleway', sans-serif;
+    background: #212B33;
+    font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+}
+
+:focus {
+    outline: 0;
+}
+
+#wrapper {
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+h1 {
+    color: #588296;
+    font-size: 30px;
+    margin: 0;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 40px;
+}
+#image{
+    height:50%;
+    width:50%;
+}
+/*user form*/
+form {
+    margin: 35px 0;
+}
+#inputs {
+    height: 127px;
+    -webkit-transition: height .5s ease-in-out;
+    transition: height .5s ease-in-out;
+}
+
+#inputs div {
+    height: 41px;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition: -webkit-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+#inputs > div > div > div {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+#inputs > div > div > div input:nth-child(2),
+#inputs > div > div > div > div input:nth-child(2) {
+    -webkit-transform: translateZ(-1px) rotateX(180deg);
+    transform: translateZ(-1px) rotateX(180deg);
+}
+#inputs > div > div > div > div {
+    -webkit-transform: translateY(-41px) rotateX(0deg);
+    transform: translateY(-41px) rotateX(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+input {
+    background: #fffefc;
+    color: #414141;
+    border: 0;
+    box-sizing: border-box;
+    display: block;
+    font-family:  'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 13px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    width: 350px;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+input:active {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    background: #ffffff;
+}
+input:hover {
+    background: #c3cdcd;
+    -webkit-transition: opacity 1s .3s ease-out;
+}
+
+/*Submit Button*/
+input[type=submit] {
+    background: #5ca84c;
+    color: #FFFEFC;
+    cursor: pointer;
+}
+input[type=submit]:active{
+    background-color: #5ca84c;
+
+}
+input[type=submit]:hover{
+
+    background-color: #54b83c;
+
+}
+
+input[type=radio] {
+    display: none;
+}
+/*roulette */
+input:checked[value=reset] ~ #inputs {
+    height: 84px;
+}
+input:checked[value=reset] ~ #labels {
+    margin-top: -10px;
+}
+input:checked[value=reset] ~ #inputs div > div > div {
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+input:checked[value=reset] ~ #inputs div > div > div > div {
+    -webkit-transform: translateY(-41px) rotateX(180deg);
+    transform: translateY(-41px) rotateX(180deg);
+}
+input:checked[value=reset] ~ #labels label[for=reset],
+input:checked[value=reset] ~ #labels label[for=register],
+input:checked[value=reset] ~ #labels label[for=login]:first-child {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+input:checked[value=register] ~ #inputs {
+    height: 170px;
+}
+input:checked[value=register] ~ #labels {
+    margin-top: 30px;
+}
+input:checked[value=register] ~ #labels label[for=reset],
+input:checked[value=register] ~ #labels label[for=register],
+input:checked[value=register] ~ #labels label[for=login]:nth-child(3) {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+input:checked[value=login] ~ #labels {
+    margin-top: 11px;
+}
+input:checked[value=login] ~ #inputs div > div > div > div {
+    -webkit-transform: translateY(-41px) rotateX(180deg);
+    transform: translateY(-41px) rotateX(180deg);
+}
+input:checked[value=login] ~ #labels label[for=login] {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+/*labels*/
+#labels {
+    -webkit-transition: margin .5s ease-in-out;
+    transition: margin .5s ease-in-out;
+}
+
+label {
+    font-family:  'Raleway', sans-serif;
+    display: block;
+    font-size: 16px;
+    color: #ffffff;
+    -webkit-transition: opacity 1s .3s;
+    overflow: hidden;
+}
+
+label:hover {
+    cursor: pointer;
+    color: #54b83c;
+}
+
+/*Message shown on the very bottom of the screen with my name and */
+#copyright {
+    font-family:  'Raleway', sans-serif;
+    font-size: 14px;
+    position: absolute;
+    justify-content: center;
+    left: 50px;
+    width: 100%;
+    display: flex;
+    bottom: 20px;
+    opacity: .2;
+    margin: 0 -62px;
+    font-weight: 600;
+    color: #b3cde0;
+}
