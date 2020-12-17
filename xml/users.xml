@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Student Name: Leonardo Amancio
+    Student ID: 2017401
+    Group: A
+    Subject: Interactive Web Applications
+    Lecturer: Mikhail Timofeev
+    Author: Leonardo Amancio
+    Code version: 1.0.0 02 Dec, 2020
+    Availability: https://github.com/yvaernos/retail-stock
+-->
 
-<userdetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="users.xsd">
+<userdetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="users.xsd">
     <users>
         <user id="001">
-            <email>test@test.com</email>
+            <email>me@test.com</email>
+            <password>123123</password>
+        </user>
+        <user id="002">
+            <email>leo@test.com</email>
             <password>123123</password>
         </user>
     </users>
