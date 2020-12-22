@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    Student Name: Leonardo Amancio
+    Author: Leonardo Amancio
     Student ID: 2017401
     Group: A
     Subject: Interactive Web Applications
     Lecturer: Mikhail Timofeev
-    Author: Leonardo Amancio
-    Code version: 1.0.0, 02 Dec, 2020
-    Availability: https://github.com/yvaernos/retail-stock
+    Code version: 1.0.0 - 02 Dec, 2020
 -->
 <stock xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="inventory.xsd">
@@ -24,7 +22,7 @@
             <category>home</category>
             <category_id>0298</category_id>
             <brand>pillow master</brand>
-            <color>white</color>
+            <colour>white</colour>
             <width>0.40</width>
             <length>0.20</length>
             <inventory_count>21</inventory_count>
@@ -32,7 +30,7 @@
         </product>
         <product id=" 2323">
             <sku>leo-9133</sku>
-            <name>fluffy pillow</name>
+            <name>scruffy pillow</name>
             <product_url>https://bit.ly/3nvecmm</product_url>
             <thumbnail_url>https://bit.ly/3amdfx6</thumbnail_url>
             <price>24.99</price>
@@ -42,7 +40,7 @@
             <category>home</category>
             <category_id>0298</category_id>
             <brand>pillow master</brand>
-            <color>white</color>
+            <colour>white</colour>
             <width>0.40</width>
             <length>0.20</length>
             <inventory_count>21</inventory_count>

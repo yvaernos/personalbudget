@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    Student Name: Leonardo Amancio
+    Author: Leonardo Amancio
     Student ID: 2017401
     Group: A
     Subject: Interactive Web Applications
     Lecturer: Mikhail Timofeev
-    Author: Leonardo Amancio
-    Code version: 1.0.0 02 Dec, 2020
-    Availability: https://github.com/yvaernos/retail-stock
+    Code version: 1.0.0 - 02 Dec, 2020
 -->
 
 <userdetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

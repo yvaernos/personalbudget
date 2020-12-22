@@ -1,0 +1,125 @@
+/*
+    Author: Leonardo Amancio
+    Student ID: 2017401
+    Group: A
+    Subject: Interactive Web Applications
+    Lecturer: Mikhail Timofeev
+    Code version: 1.0.0 - 02 Dec, 2020
+*/
+
+table, th, td {
+    border: 1px solid black;
+    width: 100%;
+}
+th {
+    background-color: #1d96b2;
+    border: 1px solid #1d96b2;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+}
+th{
+    text-align: left;
+}
+
+tr,
+th,
+td {
+    display: block;
+    padding: 0;
+    text-align: left;
+    white-space: normal;
+}
+@media (min-width: 48em) {
+    tr {
+        display: table-row;
+    }
+}
+th,
+td {
+    padding: .5em;
+    vertical-align: middle;
+}
+@media (min-width: 30em) {
+    th,
+    td {
+        padding: .75em .5em;
+    }
+}
+@media (min-width: 48em) {
+    th,
+    td {
+        display: table-cell;
+        padding: .5em;
+    }
+}
+@media (min-width: 62em) {
+    th,
+    td {
+        padding: .75em .5em;
+    }
+}
+@media (min-width: 75em) {
+    th,
+    td {
+        padding: .75em;
+    }
+}
+
+
+/**/
+/*
+th {
+    background-color: rgba(29,150,178,1);
+    border: 1px solid rgba(29,150,178,1);
+    font-weight: normal;
+    text-align: center;
+    color: white;
+
+&:first-of-type {
+     text-align: left;
+ }
+}
+}
+
+// Set these items to display: block for narrow viewports
+   tbody,
+   tr,
+   th,
+   td {
+       display: block;
+       padding: 0;
+       text-align: left;
+       white-space: normal;
+   }
+
+tr {
+@media (min-width: $bp-bart) {
+// Undo display: block
+display: table-row;
+}
+}
+
+th,
+td {
+    padding: .5em;
+    vertical-align: middle;
+
+@media (min-width: $bp-lisa) {
+    padding: .75em .5em;
+}
+
+@media (min-width: $bp-bart) {
+// Undo display: block
+display: table-cell;
+    padding: .5em;
+}
+
+@media (min-width: $bp-marge) {
+    padding: .75em .5em;
+}
+
+@media (min-width: $bp-homer) {
+    padding: .75em;
+}
+}*/
